@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Nick Bumbarger's WDI Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="portfolio.js"></script>
+</head>
+
+<body>
+  <ul class="navigation">
+    <li class="active" data-slide="1">WDI Portfolio</li>
+    <li data-slide="2">PlacemarkStory</li>
+    <li data-slide="3">IMG2MAP tool</li>
+    <li data-slide="4">USA Today</li>
+    <li data-slide="5">Flashcards.rb</li>
+    <li data-slide="6">My Background</li>
+  </ul>
+
+  <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+      <div class="title">
+        <h1>Nick Bumbarger</h1>
+        <h2>Web Development | Geospatial Solutions</h2>
+    </div>
+    <a class="button" data-slide="2" title=""></a>
+  </div>
+
+  <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+    <div class="content">
+      <h2>PlacemarkStory.com</h2>
+      <div class ="description">
+        <div class ="text">
+          <p>PlacemarkStory.com is the easiest way to create and share beautiful interactive map stories. Creating a map is as simple as defining a series of event locations using a unique and intuitive  interface, which allows place to be defined interactively on a map, using an address or current location, or even automatically based on the location that images were captured. Points of interest can be assigned additional attributes such as descriptions, images, or hyperlinks, and PlacemarkStory transforms the data into a shareable interactive map hosted in a personalized gallery.</p>
+          <p>For my flagship project, I felt it was important to create an application that drew from my interest in Geography while filling a gap in the market; a real product that people would enjoy using. In the process, I believe I demonstrated a deep understanding of the course's concepts by generalizing them to a point that the original lessons are unrecognizable in the finished product. Blog posts to a database became geoJSON datapoints on a map, adding items to a todo list became an AJAX system for realtime updating, and all of the behaviors are implemented using code that I am every bit as proud of as the application's user-facing functionality.</p>
+          <h3>Features:</h3>
+          <ul>
+            <li>Intuitive, powerful UI</li>
+            <li>Automatic location parsing</li>
+            <li>Asynchronous streaming</li>
+            <li>Responsive styles</li>
+            <li>Innovative guest system</li>
+            <li>Custom validation system</li>
+            <li>Advanced API integration</li>
+            <li>geoJSON back end</li>
+          </ul>
+        </div>
+        <img src="https://s3.amazonaws.com/wdiportfolio/placemarkstory_thumb.png">
+      </div>
+      <a class="a-button" href="http://www.PlacemarkStory.com/" target="_blank">Launch Project</a>
+      <a class="a-button" href="http://www.nickbumbarger.com/2015/05/31/placemarkstory_dot_com.html" target="_blank">Read Blog Post</a>
+      <a class="a-button" href="https://github.com/nbumbarger/placemark_story" target="_blank">GitHub Repo</a>
+    </div>
+    <span class="slideno">PlacemarkStory.com</span>
+    <a class="button" data-slide="3" title=""></a>
+  </div>
+
+  <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+    <div class="content">
+      <h2>IMG2MAP tool</h2>
+      <div class ="description">
+        <div class ="text">
+          <p>IMG2MAP allows users to drag-and-drop images from the desktop to the browser window to automatically generate a map. Because most images today have location built into their metadata, the program is able to produce maps with virtually no user intervention.</p>
+          <p>This application was built as a standalone tool in order for me to practice asynchronous, single-page JavaScript development (AJAX) as well as experiment with desktop-to-browser interactions. However, the concept is intended to be integrated with the core PlacemarkStory platform as an enhancement.</p>
+          <h3>Features:</h3>
+          <ul>
+            <li>Single-page application</li>
+            <li>Asynchronous JavaScript</li>
+            <li>Desktop-to-browser interactions</li>
+            <li>Automatic location parsing</li>
+            <li>Cloud-based image storage</li>
+            <li>Responsive styles</li>
+            <li>geoJSON back end</li>
+          </ul>
+        </div>
+        <img src="https://s3.amazonaws.com/wdiportfolio/img2map_thumb.png">
+      </div>
+      <a class="a-button" href="http://img2map.herokuapp.com/" target="_blank">Launch Project</a>
+      <a class="a-button" href="https://www.youtube.com/watch?v=3TgJtAW8WHc" target="_blank">Watch Demo Video</a>
+      <a class="a-button" href="https://github.com/nbumbarger/img2map" target="_blank">GitHub Repo</a>
+    </div>
+    <span class="slideno">IMG2MAP</span>
+    <a class="button" data-slide="4" title=""></a>
+  </div>
+
+  <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+    <div class="content">
+      <h2>Spatial USA Today</h2>
+      <div class ="description">
+        <div class ="text">
+          <p>This group project was conceived of as a spatially-enabled remix of the USA Today landing page. In place of a large image illustrating the leading article, the reimagined landing page presents a map which plots location for the top twelve articles in each section.</p>
+          <p>Behind the scenes, the project queries USA Today's newsfeed API for metadata from the latest articles, according to which section is active in the navigation bar (News, Sports, Life etc.). If it finds new articles, it adds their metadata to a database and then accesses the full JSON for each article in order to acquire an image to display with the link. This information is used to build the article link columns which surround the leading image on USA Today's homepage, as well as to produce a map indicating the articles' simulated location.</p>
+          <h3>Features:</h3>
+          <ul>
+            <li>Mapbox.js API</li>
+            <li>Multiple USA Today APIs</li>
+            <li>Integrated style</li>
+            <li>Intelligent database updating</li>
+          </ul>
+        </div>
+        <img src="https://s3.amazonaws.com/wdiportfolio/usatoday_thumb.png">
+      </div>
+      <a class="a-button" href="http://spatial-usatoday.herokuapp.com/">Launch Project</a>
+      <a class="a-button" href="https://dl.dropboxusercontent.com/u/7989543/USATodayMapViewPresentation.key">Download Presentation</a>
+      <a class="a-button" href="https://github.com/nbumbarger/USAToday-SpatialReimagining" target="_blank">GitHub Repo</a>
+    </div>
+    <span class="slideno">Spatial USA Today</span>
+    <a class="button" data-slide="5" title=""></a>
+  </div>
+
+  <div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+    <div class="content">
+      <h2>Flashcards.rb</h2>
+      <div class ="description">
+        <div class ="text">
+          <p>This project served as our introduction to Ruby on Rails, giving us two days to convert a previously completed, command-line driven Ruby assignment to a database-driven Rails application. The Flashcards topic was assigned, but we were given freedom to develop our own implementation. As it was our first web-based project, I used the opportunity to conduct a few early experiments with Rails and web standards. I diverged from the example of Rails as a blogging platform and presented the flashcards application as a game, with scoring and automatic cycling through categories. I also developed a database system in which deleted items could be rolled back, and experimented with CSS animations and glyph font packages.</p>
+          <p>By first deciding on the functionality I wanted, then figuring out how it could be implemented, I quickly became comfortable with Rails and learned to see it as more of a general purpose web-development tool than a rigid publishing platform.</p>
+          <h3>Features:</h3>
+          <ul>
+            <li>Advanced database functionality</li>
+            <li>Glyph font packages</li>
+            <li>CSS animation</li>
+          </ul>
+        </div>
+        <img src="https://s3.amazonaws.com/wdiportfolio/flashcards_thumb.png">
+      </div>
+      <a class="a-button" href="https://flashcards-rb.herokuapp.com/" target="_blank">Launch Project</a>
+      <a class="a-button" href="https://github.com/nbumbarger/Flashcards.rb" target="_blank">GitHub Repo</a>
+    </div>
+    <span class="slideno">Flashcards.rb</span>
+    <a class="button" data-slide="6" title=""></a>
+  </div>
+
+  <div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0">
+    <div class="content">
+      <h2>My Background</h2>
+      <div class ="description">
+        <div class ="text">
+          <p>You don't amass a huge portfolio while developing Geospatial Intelligence products for the US Government, but if you play your cards right you can learn a lot about software development, data visualization, digital product design, and team leadership. I see web development not as a career pivot but as another skill to add to my toolbox, as I strive to be the very best technologist I can be. It happens to be a very useful and exciting skill, and one that I'm making my focus, but everything I have done prior to taking up web development remains a relevant part of my experience as a developer.</p>
+          <p>My career in Geographic Information Science and satellite remote sensing prepared me to make the most out of everything General Assembly had to offer, and the skills I learned along the way will serve me well in any field where visual, interactive communication skills, analytical thinking, and software development ability are required.</p>
+        </div>
+        <img src="https://s3.amazonaws.com/wdiportfolio/remotesensing_thumb.png">
+      </div>
+      <a class="a-button" href="https://www.linkedin.com/in/nickbumbarger" target="_blank">LinkedIn</a>
+      <a class="a-button" href="https://github.com/nbumbarger" target="_blank">GitHub</a>
+      <a class="a-button" href="http://www.nickbumbarger.com/" target="_blank">Blog</a>
+    </div>
+    <span class="slideno">Background</span>
+  </div>
+
+</body>
+</html>
