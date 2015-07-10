@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+
+  width: 100%;
+  height: 100%;
+
+  background: #000;
+}
+
+.navigation {
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+}
+
+.navigation li {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 25px;
+
+  display: block;
+
+  width: 120px;
+  margin-bottom: 2px;
+  padding: 0 10px;
+
+  -webkit-transition: all .2s ease-in-out;
+  text-align: left;
+  letter-spacing: 1px;
+
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.navigation li:hover,
+.active {
+  font-size: 15px;
+  font-weight: 600!important;
+
+  width: 140px!important;
+
+  cursor: pointer;
+}
+
+.slide {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  background-attachment: fixed;
+  box-shadow: inset0px 10px 10px rgba(0,0,0,.3);
+}
+
+.content {
+  position: relative;
+
+  width: 900px;
+  margin: 0 0 0 30%;
+}
+
+.title {
+  position: relative;
+
+  width: 730px;
+  margin: 0 0 0 30%;
+  padding: 70px 30px 70px 30px;
+
+  text-align: center;
+
+  border-radius: 20px;
+  background: rgba(0,0,0,.5);
+}
+
+.title h1 {
+  font-size: 60px;
+  font-weight: 200;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: white;
+  text-shadow: 0 0 5px rgb(0, 150, 150), 0 0 10px rgb(0, 150, 150);
+}
+
+.title h2 {
+  font-size: 30px;
+  font-weight: 100;
+
+  margin: 0;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: rgb(255, 255, 255);
+}
+
+.content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 48px;
+
+  margin-bottom: 6px;
+  padding: 7px 0 7px 15px;
+
+  color: #fff;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  background: rgba(0,0,0,.75);
+}
+
+.content .description {
+  position: relative;
+
+  float: left;
+
+  padding: 15px;
+
+  color: #fff;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  background: rgba(0,0,0,.45);
+}
+
+.content .description .text {
+  float: left;
+
+  width: 60%;
+}
+
+.content .description .text p {
+  font-size: 13px;
+  font-weight: 200;
+
+  float: left;
+
+  margin-bottom: 10px;
+
+  letter-spacing: 2px;
+}
+
+.content .description .text h3 {
+  font-size: 13px;
+  font-weight: 400;
+
+  float: left;
+  float: left;
+  clear: right;
+
+  margin: 5px 0 3px 0;
+
+  letter-spacing: 2px;
+}
+
+.content .description .text ul {
+  font-size: 13px;
+  font-weight: 200;
+
+  float: left;
+  clear: left;
+
+  letter-spacing: 2px;
+
+     -moz-column-count: 2;
+     -moz-column-gap: 40px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
+          column-count: 2;
+          column-gap: 40px;
+}
+
+.content .description img {
+  position: relative;
+
+  float: right;
+
+  width: 35%;
+  padding: 10px;
+
+  border-radius: 5px;
+  background: rgba(0,0,0,.6);
+}
+
+a.a-button {
+  font-size: 15px;
+  font-weight: 400;
+
+  position: relative;
+
+  display: block;
+  float: left;
+
+  margin-top: 7px;
+  margin-right: 7px;
+  padding: .75rem;
+
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, .75);
+}
+
+a.a-button:hover {
+  border-color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+.slideno {
+  font-size: 100px;
+  font-weight: bold;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  color: rgba(255,255,255,.4);
+}
+
+.button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  display: block;
+
+  width: 50px;
+  height: 50px;
+
+  background-color: #333;
+  background-image: url(../images/arrow.png);
+}
+
+.button:hover {
+  cursor: pointer;
+
+  background-color: #494949;
+}
+
+[id^='slide'],
+[id*='slide'] {
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+#slide1 {
+  background-image: url(../images/blue_marble_west.jpg);
+}
+#slide2 {
+  background-image: url(../images/placemark.jpg);
+}
+#slide3 {
+  background-image: url(../images/signs.jpg);
+}
+#slide4 {
+  background-image: url(../images/printer.jpg);
+}
+#slide5 {
+  background-image: url(../images/blackboard.jpg);
+}
+#slide6 {
+  background-image: url(../images/blue_marble_east.jpg);
+}
